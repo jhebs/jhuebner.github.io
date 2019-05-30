@@ -14,11 +14,16 @@
 
   <!--fonts
   ---------------------------->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700" rel="stylesheet">
+
 
 
   <!--css/js
   ------------------------------>
-
+  <link rel="stylesheet" href="css/nav.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/shareme.css">
 
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,18 +33,24 @@
 
 <!-- LOGO
   ---------------------------->
+
+
+  <body>
   <a href="index.html"><img src="images/jh-logo.png" alt="Jennifer Huebner Product Designer"></a>
- <!--NAVIGATION-->
+  <nav = "nav-links">
+ <ul>
+   <li class="one"><a class="nav-link" href="projects.html">Work</a></li>
+   <li class="two"><a class="nav-link" href="aboutme.html">About</a></li>
+   <li class="three"><a class="nav-link" href="mailto:jenny.m.huebner@gmail.com">Contact</a></li>
+   <li class="four"><a class="nav-link" href="images/JH_Resume.pdf" target="_blank">Resume</a></li>
+
+ </ul>
+</nav>
 
 
-
-
-
-
-<body>
 <!--end nav
 ---------------------------->
-<section="top-section">
+<section class="top-section">
 
 <img src="images/logocasestudy.png" width="65" height="60">
 <h1>ShareMe</h1>
@@ -49,10 +60,11 @@
   <img src="images/share.png" alt="ShareMe photo" height="42" width="42">
 
 <a href="#casestudy">Case Study</a>
+</section>
 
  <!--SUMMARY-->
 
- <section="body">
+ <section class="body">
  <h3>Summary</h3>
      <h2>Why ShareMe?</h2>
      <h4>.......</h4>
@@ -108,16 +120,16 @@ DESIGN ROLES
             </li>
             </ul>
 
-
+</section>
 
               <!-- Overview
                 _______________-->
-                <section id="titles">
+              <header>
                 <h1>OVERVIEW</h1>
-</section>
+</header>
 <!--THE Problem
    __________________-->
-   <section id ="main_section">
+   <section class="main_section">
      <h3>The Problem</h3>
           <h2>What Problems am I Solving for?</h2>
           <h4>.......</h4>
@@ -128,7 +140,7 @@ DESIGN ROLES
 </section>
             <!--THE SOLUTION
                  _________________-->
-       <section id="main_section">
+       <section class="main_section">
 
          <h3>The Solution</h3>
          <h2>Simplicity & Increased Functionality</h2>
@@ -150,14 +162,14 @@ DESIGN ROLES
 
 <!-- RESEARCH
     ---------------------------->
-    <section id="titles">
+  <header>
       <h1>RESEARCH</h1>
 
-    </section>
+    </header>
 
     <!--COMPETITIVE ANALYSIS
     ---------------------------->
-    <section id="section">
+    <section class="section">
 
       <h3>Competitive analysis</h3>
       <h2>Learning From Existing Solutions</h2>
@@ -186,7 +198,7 @@ Easy to share information.</p>
 </section>
  <!--USER RESEARCH
     ---------------------------->
-    <section id="section">
+    <section class="section">
 
           <h3>User research</h3>
           <h2>Clarifying Users' Expectations & Frustrations</h2>
@@ -258,7 +270,7 @@ Easy to share information.</p>
 
 <!--USER PERSONAS
     ---------------------------->
-    <section id="section">
+    <section class="section">
 
 
       <h3>User personas</h3>
@@ -270,7 +282,7 @@ Easy to share information.</p>
 </section>
 
 <!-- personas-->
-    <section id="section-wide">
+    <section class="section-wide">
       <div class="section-personas">
 
           <!--Tessa-->
@@ -326,21 +338,19 @@ Easy to share information.</p>
                   <li>Not being able to rely on people to send photos to him after events.</li>
                 </ul>
               </div>
-            </div>
 
 
  <a href="#" target="_blank" class="button">View Personas</a>
 
  <!--INFORMATION ARCHITECTURE
     ---------------------------->
-    <section id="titles">
+  <header>
       <h1>INFORMATION ARCHITECTURE</h1>
-
-    </section>
+</header>
     <!--USER STORIES & FLOWS
     ---------------------------->
 
-    <section id="section">
+    <section class="section">
       <h3>User stories & flows</h3>
       <h2>Seeing it in the Context of the User</h2>
       <h4>.......</h4>
@@ -350,7 +360,7 @@ Easy to share information.</p>
       <!--user stories-->
 
 </section>
-  <section id="section">
+  <section class="section">
       <div class="user-stories">
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTaecOZoxBE0NjT_kcZ-9YfubU9v8F8pN_JEENs93dQyacEqzuuh8bDxXSXzNOfjrL_71AFaceduvGd/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
@@ -379,7 +389,7 @@ Easy to share information.</p>
 
     <!--LOW-FI WIREFRAMES
        ---------------------------->
-  <section id="section">
+  <section class="section">
          <h3>Low fidelity wireframes</h3>
          <h2>Building the Skeletal Structure</h2>
          <h4>.......</h4>
@@ -403,7 +413,7 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 
     <!--Clickable Prototype Testing
        ---------------------------->
-       <section id="section">
+       <section class="section">
 
          <h3>Clickable Prototype</h3>
          <h2>First Round of Usablity Testing</h2>
@@ -422,13 +432,13 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 
 <!-- Design
     ---------------------------->
-      <section id="titles">
+<header>
       <h1>BRANDING</h1>
 
-  </section>
+</header>
     <!--BRAND LOGO
     ---------------------------->
-    <section id="section">
+    <section class="section">
 
       <h3>Brand logo</h3>
       <h2>Creating a Brand Identity</h2>
@@ -455,7 +465,7 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 
 <!--TYPOGRAPHY
    ---------------------------->
-  <section id="section">
+  <section class="section">
 
      <h3>Typography</h3>
      <h2>Keeping the Design Systematic</h2>
@@ -466,7 +476,7 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 </section>
 <!--HI-FI PROTOTYPE
     ---------------------------->
-    <section id="section">
+    <section class="section">
 
       <h3>High fidelity prototype</h3>
       <h2>Layering on the Skin</h2>
@@ -477,7 +487,7 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 </section>
 
 
-    <div class="section-wide">
+    <section class="section-wide">
       <div class="nude2-background">
         <div class="grid-columns-2">
           <img src="images/HiFIIos.png" width="200" height="200">
@@ -485,18 +495,18 @@ I also included my mobile, since 80% of my users used mobile to send photos to f
 
         </div>
       </div>
-    </div>
+  </section>
 
 
 <a href="#" target="_blank" class="button">View Style Guide</a>
 
 <!-- evaluating the designs
    ---------------------------->
-   <section id="titles">
+  <header>
      <h1>EVALUATING THE DESIGN</h1>
 
-   </section>
-   <section id="section">
+</header>
+   <section class="section">
 
      <h3>User Testing</h3>
      <h2>Prefernce Testing</h2>
@@ -523,7 +533,7 @@ Family”</p>
 
 
 
-   <section id="section">
+   <section class="section">
 
      <h3>User Testing</h3>
      <h2>Second Usabilty Test</h2>
@@ -544,11 +554,11 @@ Family”</p>
 <!--IN CONCLUSION
      ---------------------------->
 
-   <section id="titles">
+  <header>
      <h1>CONCLUSION</h1>
 
-   </section>
-     <section id="section">
+</header>
+     <section class="section">
 
        <h3>In Conclusion</h3>
        <h2>What I Learned</h2>
@@ -566,7 +576,7 @@ Family”</p>
 </ol>
 </section>
 
-  <section id="section">
+  <section class="section">
 
     <h3>Next Steps</h3>
     <h4>.......</h4>
@@ -576,7 +586,7 @@ Family”</p>
 
 </section>
 
-<section id="footerA">
+<section class="footerA">
   <h3>Thank you for stopping by!</h3>
   <h2>Let’s create meaningful & enjoyable user experiences together.</h2>
   <h4>Like my work or just want to chat UX?
@@ -586,7 +596,7 @@ Let's get coffee.</h4>
 <a href="#" target="_blank" class="button">Get in Touch</a>
 
 </section>
-<footer id = "footer">
+<footer class="footer">
         <!-- To wrap all content inside the footer -->
         <div class="social-links">
           <!-- Font Awesome social media links -->
