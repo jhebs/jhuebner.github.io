@@ -4,62 +4,45 @@ html {
 
 /*GLOBAL COLORS*/
 :root {
-  --navy: #2E5266;
-  --black: #2E2F31;
+  --white: #FFFFFF;
+  --black: #0B3040;
   --gold: #C8840E;
-  --nude: #FFF9F7;
+  --purple: #FBF9FD;
   --red: #db5461;
   --aqua: #57CBB0;
+  --blue: #008BD0;
+  --lblue: #C2E5FF;
 }
 
 a:hover {
   color: var(--gold);
 }
 
-/*RETURN TO Top
-____________________________________________________*/
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: var(--gold);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+a { color: black; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
-#return-to-top:hover {
-  background: var(--navy);
-}
 
-#return-to-top:hover i {
-  color: var(--nude);
-  top: 5px;
-}
 
 .link {
   color: var(--gold);
@@ -93,8 +76,9 @@ h1 {
   letter-spacing: .06rem;
   line-height: normal;
   padding: 2rem 0 .5rem 0;
-  border-bottom: .4rem solid var(--gold);
+  border-bottom: .4rem solid var(--blue);
   text-align: center;
+  width:100%;
 }
 
 h3 {
@@ -110,10 +94,13 @@ h2 {
   font-family: 'Playfair Display', serif;
 }
 
+h2 span{
+  padding:0 10px;
+}
 h4 {
-  color: var(--gold);
-  padding-bottom: 1.1rem;
-  letter-spacing: .7rem;
+  color: var(--lblue);
+  padding-bottom: 1rem;
+  letter-spacing: .4rem;
 }
 
 h2, h3, h4 {
@@ -140,7 +127,7 @@ p {
   font-family: 'nunito', sans-serif;
   font-weight: 300;
   letter-spacing: .02rem;
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 0;
 }
 
 ul, ol {
@@ -153,13 +140,13 @@ ul, ol {
   padding-top: .5rem;
 }
 
-#body ul {
+.body ul {
   list-style-type: disc;
   padding-bottom: 1rem;
   padding-left: 3rem;
 }
 
-#body li {
+body li {
   padding-left: .2rem;
   padding-bottom: .5rem;
 }
@@ -173,12 +160,12 @@ a {
   text-decoration: none;
 }
 
-#work {
+work {
   margin: 0 1.5rem font-family: 'nunito', sans-serif;
 }
 
-#body {
-  margin: 0 1.5rem;
+body {
+  margin:0 1.5rem;
 }
 
 .img-caption {
@@ -200,15 +187,18 @@ a {
 font-weight: 600;
 }
 
-.section {
+.main-section {
   padding-top: 8rem;
   max-width: 80rem;
   margin: auto;
 }
 
+
+
+
+
 .section-wide {
-  max-width: 120rem;
-  margin: auto;
+ width:100%;
   align-items: center;
   padding-top: 2rem;
 }
@@ -226,7 +216,7 @@ font-weight: 600;
   font-style: italic;
   margin: auto;
   text-align: center;
-  color: var(--black)
+  color: var(--black);
 }
 
 .three-grid {
@@ -270,7 +260,7 @@ font-weight: 600;
   padding-bottom: 1rem;
 }
 
-#persona-name {
+.persona-name {
   font-weight: 600;
   padding-bottom: 1rem;
 }
@@ -289,15 +279,15 @@ ___________________________________ */
   display: block;
   align-items: center;
   cursor: pointer;
-  max-width: 32.5rem;
+  max-width: 20.5rem;
   color: #FFF;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   white-space: nowrap;
   background-color: transparent;
   color: var(--gold);
   margin-top:3rem;
-  border: 0.2rem solid var(--gold);
+  border: 0.1rem solid var(--gold);
   border-radius: 3rem;
   transition: .7s ease-in-out;
   font-family: 'nunito', sans-serif;
@@ -313,19 +303,19 @@ ___________________________________ */
 .contact-button {
   display: inline-block;
   cursor: pointer;
-  width: 33.5rem;
+  width: 20.5rem;
   color: var(--gold);
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   white-space: nowrap;
   background-color: transparent;
-  border: 0.2rem solid var(--gold);
+  border: 0.1rem solid var(--gold);
   border-radius: 3rem;
   /*box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);*/
   transition: .7s ease-in-out;
   margin: 1rem;
   font-family: 'nunito', sans-serif;
-  letter-spacing: .08rem;
+  letter-spacing: .06rem;
 }
 
 .contact-button:hover {
@@ -345,21 +335,24 @@ ___________________________________ */
 
 /*footer
 _____________________*/
-footer {
-  background-color: var(--navy);
-  grid-column: 1 / -1;
-  margin: 0;
-  padding: 4rem;
-  text-align: center;
+.footer {
+  display:flex;
+  padding: 2rem 8rem 0 8rem;
+  background-color: var(--purple);
+  width:100%;
 }
 
-footer p {
-  color: #FFF;
+.footer li{
+  display:inline-block;
+}
+
+.footer p{
+margin-right:25rem;
 }
 
 .social-links a {
   padding: 0 0.6rem;
-  color: #FFF;
+  color: var(--black);
   transition: 0.3s ease-in-out;
 }
 
@@ -371,7 +364,7 @@ footer p {
 /*MEDIA screens
 _____________________________*/
 @media screen and (max-width:909px) {
-  .nude2-background {
+  .purple2-background {
     margin-right: 2rem;
     margin-left: 2rem;
   }
@@ -393,18 +386,19 @@ _____________________________*/
 }
 
 @media screen and (min-width:896px) {
-  #footer {
+  .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 10rem;
   }
 
-  #persona-name {
+  .footer p{
+    align-items: left;
+  }
+  .persona-name {
     font-size: 2.8rem
   }
 
-  #persona-name .persona-name {
+  .persona-name .persona-name {
     font-size: 2.6rem;
   }
 
@@ -462,11 +456,11 @@ _____________________________*/
 }
 
 @media screen and (max-width:895px) {
-  #persona-name {
+  .persona-name {
     font-size: 2.4rem
   }
 
-  #persona-name .persona-name {
+  .persona-name .persona-name {
     font-size: 2.2rem
   }
 
@@ -523,49 +517,16 @@ _____________________________*/
   .button, .contact-button {
     padding: 1.5rem 0;
   }
+
 }
+
+
+
 
 @media screen and (max-width:425px) {
   .button {
     width: 100%;
   }
-}
-}
 
-/* ANIMATIONS */
-.animated.delay-1s {
-  -webkit-animation-delay: 5s;
-  animation-delay: 3s;
-}
 
-.animated.delay-2s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.animated.delay-half {
-  -webkit-animation-delay: .1s;
-  animation-delay: .1s;
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-.animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }

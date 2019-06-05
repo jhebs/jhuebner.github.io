@@ -1,17 +1,13 @@
-/*NAVIGATION START*/
-/* Sticky Navigation - Outside Grid Wrapper */
+
+
 .nav-link {
   color: var(--black);
 }
 
-header {
-  background-color: var(--nude);
-}
-
-
 
 .shareme-background {
   width: 100%;
+  background-color:  #FBF9FD;
 }
 
 .case-study-section {
@@ -20,7 +16,6 @@ header {
   max-width: 110rem;
   align-items: center;
   justify-content: center;
-  padding-top: 6rem;
   padding-bottom: 6rem;
   grid-gap: 5rem;
   margin: auto;
@@ -30,7 +25,7 @@ header {
   width: 100%;
 }
 
-.assemble-screen-section {
+.shareme-screen-section {
   display: block;
   height: 100%;
   margin: auto;
@@ -38,12 +33,12 @@ header {
 }
 
 .section-wide {
-  max-width: 120rem;
+  width:100%;
   margin: auto;
   align-items: center;
 }
 
-.assemble-explanation-section {
+.shareme-explanation-section {
   margin: auto;
 }
 
@@ -58,39 +53,44 @@ header {
 .contact-section-background {
   padding-top: 8rem;
   width: 100%;
-  margin-top: 6rem;
   justify-content: center;
-  background-color: var(--nude);
+  background-color: var(--white);
 }
 
 .contact-btns {
   float: center;
+  display: inline-block;
 }
-
 
 
 .I-am-Jenny {
   display: block;
   padding: 12rem 0 5rem 0;
-  max-width: 90rem;
+  max-width: 55rem;
   margin: auto;
+  line-height: 2.5rem;
 }
 
 .I-am-Jenny p {
-  text-align: center;
-  padding: 1.5rem;
+  padding-top:  1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-#top-section {
+.highlight {
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 70%, #C2E5FF 20%);
+  }
+
+.top-section {
   width: 100%;
-  background-image: linear-gradient(var(--nude), white);
+  background-image: linear-gradient(var(--violet), white);
 }
 
 .hi {
   font-family: 'Playfair Display', serif;
-  color: var(--navy);
-  text-align: center;
-  padding-bottom: 1rem;
+  color: var(--black);
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  padding-left: 1.5rem;
 }
 
 .work-link {
@@ -104,44 +104,13 @@ header {
   text-align: center;
 }
 
-/*TRIANGLE
-_______________________*/
-.work-link::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 1rem 1rem 0 1rem;
-  border-color: var(--navy) transparent transparent transparent;
-  bottom: -2.5rem;
-  left: calc(50% - 1rem);
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
-/*ANIMATIONS*/
-@-webkit-keyframes bounce {
-  from {
-    left: 0px;
-  }
 
-  to {
-    left: 200px;
-  }
-}
 
-.bounce {
-  -webkit-animation-name: bounce;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: 10;
-  -webkit-animation-direction: alternate;
-}
-
-.animated.slower {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-}
-
-/*ANIMATION DONE*/
 @media screen and (max-width:840px) {
   .case-study-section {
     display: grid;
@@ -165,20 +134,17 @@ _______________________*/
   }
 
   .hi {
-    font-size: 5.9rem;
+    font-size: 4.9rem;
     text-align: center;
     line-height: 6.3rem;
   }
 }
 
 @media screen and (min-width:896px) {
-  .I-am-Jenny p {
-    line-height: 3rem;
-    font-size: 2rem;
-  }
+
 
   .hi {
-    font-size: 7.5rem;
+    font-size: 5.5rem;
   }
 
   .work-link {
@@ -187,11 +153,15 @@ _______________________*/
 }
 
 @media screen and (max-width:895px) {
-  #I-am-Jenny p {
+  .I-am-Jenny p {
     line-height: 2.55rem;
-    font-size: 1.8rem;
-  }
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    }
 
+header {
+  align-items: left;
+}
   .work-link {
     font-size: 1.8rem;
   }

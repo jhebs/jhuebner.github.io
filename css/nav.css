@@ -1,50 +1,38 @@
-/* Progress bar
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.scroll-indicator {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
-}
 
-.progress-container {
-  width: 100%;
-  height: 6px;
-  background: #FFF;
-}
 
-.progress-bar {
-  height: 5px;
-  background: var(--navy);
-  width: 0%;
-}
-
-#logo-container {
+.logo-container {
   display: grid;
   justify-content: center;
-  align-items: right;
+  align-items: center;
 }
 
-#header {
+header {
   padding: 2rem 8rem 0 8rem;
   display: flex;
-  align-items: right;
+  justify-content: left;
   justify-content: space-between;
+ /* Set the navbar to fixed position */
+
+
+}
+
+.header-background{
+    background-color: #FBF9FD;
 }
 
 .jh-logo {
-  width:10rem;
+  width: 7rem;
 }
 
-.nav-links .jh-logo {
-  padding-top: .2rem
+.nav-link .jh-logo {
+  padding-top: .2rem;
+
 }
 
 /**
 NAV LINKS
 **/
-#nav-links {
+.nav-link {
   padding: 2.2rem 2.2rem 0rem 2.2rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -53,33 +41,53 @@ NAV LINKS
 }
 
 
-#nav-links:active {
+/**
+STICKY NAV
+**/
+
+
+
+.nav-link:active {
   cursor: pointer;
 }
 
-#nav-links {
+.nav-links {
   display: block;
   font-weight: 600;
-  ;
+
+
+
 }
 
-#nav-links li {
+
+.caseNavBar a {
+  font-weight: 600;
+  background-color:  #FBF9FD;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: var(--black);
+  display:inline-block;
+  width:100%;
+
+}
+.nav-links li {
   display: inline-block;
 }
 
-#nav-link:hover {
+.nav-link:hover {
   font-weight: 400;
 }
 
-/*MEDIA SCREENS
 _____________________________*/
 @media screen and (max-width:800px) {
   header {
-    flex-direction: column;
+    justify-content: center;
+  flex-direction: column;
     padding: 2rem 0rem 0 0rem;
   }
 
-  #nav-links {
+  .nav-links {
     padding-top: 2rem;
   }
 }
@@ -91,7 +99,7 @@ _____________________________*/
 }
 
 @media screen and (max-width:852px) {
-#nav-link, #nav-links {
+  .nav-link, .nav-links {
     font-size: 1.7rem;
   }
 }
@@ -115,25 +123,8 @@ _____________________________*/
 }
 
 @media screen and (max-width:500px) {
-  #nav-link {
-    padding: 2.2rem 1.6rem 0rem 1.6rem;
+  .nav-link {
+    padding: 2.2rem;
+    justify-content: right;
+  flex-direction: column;
   }
-/*
-  .one:hover~hr {
-    margin-left: 10.5%;
-  }
-
-  .two:hover~hr {
-    margin-left: 32.6%;
-  }
-
-  .three:hover~hr {
-    margin-left: 58.7%;
-  }
-
-  .four:hover~hr {
-    margin-left: 85%;
-  }*/
-}
-
-/* END NAVIGATION STYLES and MEDIA QUERIES */
