@@ -9,7 +9,7 @@ overflow-x:hidden;
 }
 
 header {
-  padding: 2rem 8rem 0 8rem;
+  padding: 2rem 2rem 0 2rem;
   display: flex;
   justify-content: left;
   justify-content: space-between;
@@ -94,6 +94,9 @@ _____________________________*/
     padding-top: .25rem;
   }
 
+ui.icons{
+  align-items: center;
+}
 
 }
 
