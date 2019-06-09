@@ -144,9 +144,10 @@ ul {
   }
 
   .hi-glad, .hi-story {
-    font-size: 5.9rem;
-    line-height: 6.3rem;
+    font-size: 4.9rem;
+    line-height: 4.3rem;
     text-align:center !important;
+    padding:3rem;
   }
 
   .I-am-Jenny p {

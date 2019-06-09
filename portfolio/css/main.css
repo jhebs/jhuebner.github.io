@@ -202,7 +202,7 @@ font-weight: 600;
 
 
 .section-wide {
- width:100%;
+  width:95%;
   align-items: center;
   padding-top: 2rem;
 }
@@ -355,7 +355,7 @@ _____________________*/
 }
 
 .footer p{
-margin-left;2rem;
+margin-left: 2rem;
 }
 
 .social-links a {
@@ -373,8 +373,7 @@ margin-left;2rem;
 _____________________________*/
 @media screen and (max-width:909px) {
   .purple2-background {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    width:50%;
   }
 }
 
@@ -391,6 +390,18 @@ _____________________________*/
   .three-grid {
     grid-gap: 2rem;
   }
+
+  .responsive{
+    width: 50%;
+  height: auto;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purple2-background {
+    width:50%;
+  }
 }
 
 @media screen and (min-width:896px) {
@@ -400,7 +411,7 @@ _____________________________*/
   }
 
   .footer p{
-    align-items: left;
+    align-items: center;
   }
   .persona-name {
     font-size: 2.8rem
@@ -461,6 +472,19 @@ _____________________________*/
   .button, .contact-button {
     padding: 1.5rem 0;
   }
+
+  .main-section{
+  overflow-y: hidden;
+  padding-left:1.5rem;
+}
+
+.responsive{
+  width: 50%;
+height: auto;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 @media screen and (max-width:895px) {
@@ -525,7 +549,16 @@ _____________________________*/
   .button, .contact-button {
     padding: 1.5rem 0;
   }
+  .main-section{
+  overflow-y: hidden;
+padding-left:1.5rem;
+padding-right:1.5rem;
+}
 
+.responsive{
+  max-width: 67%;
+height: auto;
+}
 }
 
 
@@ -535,6 +568,15 @@ _____________________________*/
   .button {
     width: 100%;
   }
+
+  .main-section{
+  overflow-y: hidden;
+  padding:1rem;
+}
+
+.responsive{
+
+}
 
 
 }

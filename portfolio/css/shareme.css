@@ -93,6 +93,7 @@ a:hover {
 
 .design-roles {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 margin: auto;
 max-width: 120rem;
 grid-gap: 2.5rem;
@@ -104,7 +105,7 @@ text-align: center;
 
 .design-roles li{
   list-style-type: none;
-  font-size:1.70rem;
+  font-size:1.40rem;
 }
 .design-role-title {
   font-weight: 500;
@@ -120,7 +121,7 @@ text-align: center;
   display: grid;
   grid-gap: 3rem;
   padding: 2rem;
-  margin: auto;
+  margin-bottom: 4rem;
 }
 
 .competitive-analysis img {
@@ -261,7 +262,6 @@ text-align: center;
 }
 
 .purple2-background {
-  width: 100%;
   background-color: var(--purple);
   margin: auto;
   margin-top: 5rem;
@@ -308,7 +308,7 @@ text-align: center;
 }
 
 .grid-columns-2 img {
-  width: 100%;
+  width: 78%;
 }
 
 .grid-columns-2 {
@@ -422,6 +422,11 @@ text-align: center;
   .mind-mapping img {
     max-height: 70rem;
   }
+
+  .purple2-background {
+    width: 75%;
+  }
+
 }
 
 @media screen and (min-width:851px) {
@@ -448,6 +453,8 @@ text-align: center;
     grid-template-rows: 1fr .5fr 1fr .5fr 1fr;
     margin: auto;
   }
+
+
 
 
 
@@ -513,6 +520,8 @@ text-align: center;
     line-height: 2.55rem;
   }
 
+}
+
 
 
 @media screen and (min-width:651px) {
@@ -530,11 +539,17 @@ text-align: center;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
   }
+
+  .responsive{
+    width: 70%;
+  height: auto;
+
+  }
 }
 
 @media screen and (max-width:650px) {
   .design-roles {
-    display: grid;
+    display: flex;
     grid-template-rows: .5fr 1fr .5fr;
     margin-bottom:0;
     grid-gap: 1rem;
@@ -558,3 +573,28 @@ text-align: center;
   .words img {
     padding-bottom: 3rem;
   }
+
+  .responsive{
+    width: 80%;
+  height: auto;
+
+  }
+  .main-section{
+  overflow-y: hidden;
+padding-left:1.5rem;
+}
+
+footer p {
+  margin-left:3rem;
+}
+
+.hero {
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 4rem 0 5rem 0;
+}
+
+}

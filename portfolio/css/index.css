@@ -5,9 +5,6 @@
 }
 
 
-
-
-
 .shareme-background {
   background-color:  #FBF9FD;
 }
@@ -91,7 +88,6 @@
   color: var(--black);
   padding-bottom: 3rem;
   font-size: 3.5rem;
-  padding-left: 1.5rem;
 }
 
 .work-link {
@@ -154,6 +150,12 @@
   .section-wide{
     width:50%;
   }
+
+  .responsive{
+    margin:0 auto;
+  }
+
+
 }
 
 @media screen and (max-width:895px) {
@@ -173,4 +175,16 @@ header {
   .contact-section p {
     line-height: 2.55rem;
   }
+  .section-wide{
+  overflow-y: hidden;
+  padding:1.5rem;
+}
+
+.responsive{
+  margin:0 auto;
+}
+
+h3{
+  font-size: 1.5rem;
+}
 }
