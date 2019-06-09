@@ -308,7 +308,7 @@ text-align: center;
 }
 
 .grid-columns-2 img {
-  width: 78%;
+  width: 100%;
 }
 
 .grid-columns-2 {
@@ -541,10 +541,18 @@ text-align: center;
   }
 
   .responsive{
-    width: 70%;
+    width: 100%;
   height: auto;
 
   }
+
+  .responsive-a{
+    width: 50%;
+  height: auto;
+
+  }
+
+
 }
 
 @media screen and (max-width:650px) {
@@ -562,6 +570,16 @@ text-align: center;
     grid-gap: 0rem;
   }
 
+  .responsive{
+    width: 50%;
+  height: auto;
+
+  }
+
+  .grid-columns-2 img {
+    width: 75%;
+    align-items: center;
+  }
 
   .percent-section-block2 {
     display: grid;
