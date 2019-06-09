@@ -1,0 +1,140 @@
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+
+.logo-container {
+  display: grid;
+  justify-content: flex-start;
+}
+
+header {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: left;
+  justify-content: space-between;
+ /* Set the navbar to fixed position */
+
+
+}
+
+.header-background{
+    background-color: #FBF9FD;
+}
+
+.jh-logo {
+  width: 7rem;
+}
+
+.nav-link .jh-logo {
+  padding-top: .2rem;
+
+}
+
+/**
+NAV LINKS
+**/
+.nav-link {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: var(--black);
+}
+
+
+/**
+STICKY NAV
+**/
+
+
+
+.nav-link:active {
+  cursor: pointer;
+}
+
+.nav-links {
+  display: block;
+  font-weight: 600;
+
+
+
+}
+
+
+.caseNavBar a {
+  font-weight: 600;
+  background-color:  #FBF9FD;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: var(--black);
+  display:inline-block;
+  width:100%;
+
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link:hover {
+  font-weight: 400;
+}
+
+
+_____________________________*/
+@media screen and (max-width:800px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0rem 0 0rem;
+  }
+
+  .nav-links {
+    padding-top: .25rem;
+  }
+
+ui.icons{
+  align-items: center;
+}
+
+}
+
+@media screen and (min-width:853px) {
+  .nav-link, .nav-links {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:852px) {
+  .nav-link, .nav-links {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width:501px) {
+  .one:hover~hr {
+    margin-left: 10.2%;
+  }
+
+  .two:hover~hr {
+    margin-left: 34%;
+  }
+
+  .three:hover~hr {
+    margin-left: 59.5%;
+  }
+
+  .four:hover~hr {
+    margin-left: 85.5%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .nav-link {
+    padding: .25rem;
+    justify-content: right;
+  flex-direction: column;
+
+
+  }
