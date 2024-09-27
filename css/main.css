@@ -347,15 +347,13 @@ _____________________*/
   text-align: center;
 }
 
-.icons {
-  padding-left:0;
-}
+
 .footer li{
   display:inline-block;
 }
 
-.footer p{
-margin-left: 2rem;
+.footer ul{
+  padding-left: 0;
 }
 
 .social-links a {

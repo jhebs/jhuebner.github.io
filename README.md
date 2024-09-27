@@ -1,3 +1,2 @@
-# My Portfolio
+I am a Product Designer based in Austin,TX. This is my portfolio.
 
-A showcase of my work at Bloc.
